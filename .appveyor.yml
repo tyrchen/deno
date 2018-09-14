@@ -1,0 +1,5 @@
+version: 'clear_cache_({build})'
+cache:
+  - c:\dummy
+build: off
+test: off
