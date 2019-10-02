@@ -1,0 +1,27 @@
+# Copyright 2018-2019 the Deno authors. All rights reserved. MIT license.
+sudo: false
+language: rust
+rust:
+  - 1.37.0
+git:
+  depth: 1
+env:
+cache:
+  cargo: false
+  directories:
+  - dummy
+
+script:
+- echo ok
+
+jobs:
+  include:
+    - name: "release mac x86_64"
+      os: osx
+      osx_image: xcode11
+
+    - name: "release linux x86_64"
+      os: linux
+
+    - name: "benchmarks"
+      os: linux
