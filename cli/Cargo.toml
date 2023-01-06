@@ -92,7 +92,7 @@ serde = { version = "=1.0.136", features = ["derive"] }
 shell-escape = "=0.1.5"
 text-size = "=1.1.0"
 text_lines = "=0.4.1"
-tokio = { version = "=1.17", features = ["full"] }
+tokio = { version = "=1.18", features = ["full"] }
 tokio-util = "=0.7.0"
 tower-lsp = "=0.16.0"
 typed-arena = "2.0.1"
